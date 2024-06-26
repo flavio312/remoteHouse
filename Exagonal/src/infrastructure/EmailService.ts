@@ -1,11 +1,10 @@
 import nodemailer from 'nodemailer';
 
-// Configuración para Gmail
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: '231204@ids.upchiapas.edu.mx', 
-    pass: 'flavio312', 
+    pass: 'password', 
   },
 });
 
