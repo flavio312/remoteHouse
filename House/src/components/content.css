@@ -1,0 +1,132 @@
+.house-container {
+  background-color: #87CEEB; 
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.house {
+  position: relative;
+  width: 500px;
+  height: 450px;
+  background-color: #F5DEB3;
+  border: 10px solid #8B4513; 
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.roof {
+  position: absolute;
+  top: -500px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  border-bottom: 100px solid #8B4513; /* Color marrón para el techo */
+}
+
+.door {
+  position: absolute;
+  bottom: 0;
+  left: 85%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 140px;
+  background-color: #8B4513; /* Puerta marrón */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.window {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: #87CEEB; /* Ventanas azules */
+  border: 5px solid #8B4513;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.window-left {
+  top: 120px;
+  left: 50px;
+}
+
+.window-right {
+  top: 120px;
+  right: 50px;
+}
+
+.gate {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 100px;
+  background-color: #8B4513; /* Portón marrón */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.light {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #FFFF00; /* Luz amarilla */
+  border-radius: 50%;
+  box-shadow: 0 0 10px #FFFF00;
+  transition: opacity 0.3s;
+}
+
+.climate {
+  position: absolute;
+  top: 80px;
+  right: 200px;
+  width: 100px;
+  height: 50px;
+  background-color: #C0C0C0; /* Control de clima gris */
+  border-radius: 10px;
+}
+
+.control-panel {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.house-info {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  color: #333;
+  font-size: 14px;
+}
+
+.house button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.house button:hover {
+  background-color: #45a049;
+}
